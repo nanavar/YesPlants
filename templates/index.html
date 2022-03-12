@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JS Responsive Website</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- cookies 
+    <div id="cookiePopup">
+        <img src="/images/cookie.png" alt="cookie">
+        <p>
+            Our website uses cookies to provide your browsing experience and
+            relevant information. Before continuing to use our website, you agree &
+            accept of our <a href="#">Cookie Policy & Privacy.</a>
+        </p>
+        <button id="acceptCookie">Accept</button>
+    </div>
+-->
+    <!-- 
+        - navbar 
+    -->
+
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">YesPlants</a>
+            <div class="menu">
+                <a href="#services">Why us?</a>
+                <a href="#about">About us</a>
+                <a href="#faq">FAQ's</a>
+                <a href="#products">Products</a>
+                <a href="#reviews">Reviews</a>
+                <a href="/cart"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #e8e9ed;">
+                        <path
+                            d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z">
+                        </path>
+                    </svg></a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-nav">
+        <a href="#services">Why us?</a>
+        <a href="#about">About us</a>
+        <a href="#faq">FAQ's</a>
+        <a href="#reviews">Reviews</a>
+        <a href="/cart"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #e8e9ed;">
+                <path
+                    d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z">
+                </path>
+            </svg></a>
+    </div>
+
+    <!-- 
+        - hero section 
+    -->
+
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1 class="glow">YesPlants</h1>
+                <h2>Growing today will help you tomorrow.</h2>
+                <button class="main__btn"><a href="#products">Shop now</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        - services  section 
+    -->
+
+    <div class="services" id="services">
+        <h1 class="heading">See what we offer</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <h2>Exceptional Quality</h2>
+                <p>Quality control soil and seeds.</p>
+            </div>
+            <div class="services__card">
+                <h2>Support</h2>
+                <p>Online lifetime su <span>pport.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        - about section 
+    -->
+
+    <div class="about" id="about">
+        <h1 class="heading">About <span>US</span></h1>
+        <div class="row">
+            <div class="video-container">
+                <video src="/static/images/about.mp4" loop autoplay muted></video>
+                <h3>Highest Quality and Education</h3>
+            </div>
+            <div class="content">
+                <h3>What are we about?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore similique tempora porro
+                    corporis at iure? Vitae ea accusamus illum, aspernatur, libero vel ad nemo unde hic optio
+                    repellat, voluptatem voluptate. Vel commodi ratione neque id iure, molestias totam sed alias
+                    iusto saepe velit. Accusantium explicabo aperiam impedit quidem placeat eveniet.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, ipsum aperiam. Libero recusandae
+                    eaque aspernatur quis accusantium, exercitationem eveniet ipsum.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        - icons 
+    -->
+
+    <div class="icons__container" id="faq">
+        <div class="icons">
+            <img src="/static/images/delivery.png" alt="free delivery">
+            <div class="info">
+                <h3>free delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="/static/images/calendar.png" alt="pick a date">
+            <div class="info">
+                <h3>schedule delivery</h3>
+                <span>pick specific date</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="/static/images/return.png" alt="free returns">
+            <div class="info">
+                <h3>free returns</h3>
+                <span>money back guarantee</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="/static/images/package.png" alt="compostable packaging">
+            <div class="info">
+                <h3>ECO pacaking</h3>
+                <span>compostable packaging</span>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        - FaQ's section
+    -->
+
+    <div class="faq-container">
+        <h1 class="heading">Frequently Asked <span> Questions</span></h1>
+        <div class="accordion">
+
+            <!-- #1 Q -->
+            <div class="accordion-item">
+                <button class="accordion-question">What soil do we use?</button>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odio maxime nulla doloremque
+                            quos, iure
+                            similique temporibus saepe dignissimos eaque.
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Eligendi, accusantium animi. Architecto dolores similique, perspiciatis ut
+                            aperiam ipsum mollitia at.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #2 Q -->
+            <div class="accordion-item">
+                <button class="accordion-question">When will my plants to arrive?</button>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur consectetur
+                            officiis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #3 Q -->
+            <div class="accordion-item">
+                <button class="accordion-question">What if my plant is sick?</button>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro incidunt natus, explicabo
+                            ipsam nihil
+                            quisquam asperiores quos tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eaque necessitatibus explicabo maxime? Ipsum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #4 Q -->
+            <div class="accordion-item">
+                <button class="accordion-question">Can I exchange the plant?</button>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #5 Q -->
+            <div class="accordion-item">
+                <button class="accordion-question">Where can I find plant care info?</button>
+                <div class="accordion-collapse collapse">
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi molestias officiis
+                            architecto
+                            tenetur? Sapiente temporibus molestiae quae!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        - products section 
+    -->
+
+    <div class="products" id="products">
+        <h1 class="heading">Shop our <span>products</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="no-discount"></div>
+                <div class="image">
+                    <img src="/static/images/product.jpg" alt="product">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="cart.html" class="fas fa-shopping-cart btn-cart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Succulent</h3>
+                    <div class="price">8.54 €</div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="/static/images/product2.jpg" alt="product">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="cart.html" class="fas fa-shopping-cart btn-cart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Plant</h3>
+                    <div class="price">13.49 €<span> 14.99 €</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="/static/images/product3.jpg" alt="product">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="cart.html" class="fas fa-shopping-cart btn-cart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Cactus</h3>
+                    <div class="price">7.46 €<span> 8.29 €</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="/static/images/product4.jpg" alt="product">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="cart.html" class="fas fa-shopping-cart btn-cart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Plant</h3>
+                    <div class="price">19.10 €<span> 21.22 €</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="/static/images/product5.jpg" alt="product">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="cart.html" class="fas fa-shopping-cart btn-cart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Cactus</h3>
+                    <div class="price">10.13 €<span> 11.25 €</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="no-discount"></div>
+                <div class="image">
+                    <img src="/static/images/product8.jpg" alt="product">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="cart.html" class="fas fa-shopping-cart btn-cart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Plant</h3>
+                    <div class="price">24.15 €</div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-14%</span>
+                <div class="image">
+                    <img src="/static/images/product6.jpg" alt="product">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="cart.html" class="fas fa-shopping-cart btn-cart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Succulent</h3>
+                    <div class="price">10.01 €<span> 11.12 €</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="no-discount"></div>
+                <div class="image">
+                    <img src="/static/images/product7.jpg" alt="product">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="cart.html" class="fas fa-shopping-cart btn-cart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Succulent</h3>
+                    <div class="price">10.45 €<span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        - review section 
+    -->
+
+    <div class="review" id="reviews">
+        <h1 class="heading">Custormer <span>reviews</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate harum et enim nihil minima
+                    deserunt blanditiis repellendus quis atque repellat cumque, fugiat incidunt quas facilis soluta
+                    voluptate suscipit labore illum voluptas obcaecati. Consequuntur, vitae voluptatibus. Lorem
+                    ipsum
+                    dolor sit amet.</p>
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/women/61.jpg" alt="random user">
+                    <div class="user-info">
+                        <h3>Asha Lučić</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam ea quos,
+                    officiis
+                    quod quibusdam quisquam dolorem vel. Ratione, excepturi. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Nihil, eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="random user">
+                    <div class="user-info">
+                        <h3>Shazia Ahmad</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <i class="fas fa-star stars"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloribus illum a eligendi
+                    veniam.
+                    Eos voluptate, sapiente vero nihil quaerat alias in velit accusantium aliquam odio esse nulla
+                    illum
+                    quod consequatur numquam, repellat laboriosam vel est suscipit aperiam quas sunt!</p>
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="random user">
+                    <div class="user-info">
+                        <h3>Jay Carter</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        - footer section 
+    -->
+
+    <div class="footer">
+        <div class="social">
+            <a href="/"><i class="fab fa-facebook"></i></a>
+            <a href="/"><i class="fab fa-youtube"></i></a>
+            <a href="/"><i class="fab fa-instagram"></i></a>
+            <a href="/"><i class="fab fa-twitter"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#services">Why us?</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#faq">FAQ's</a>
+            </li>
+            <li>
+                <a href="#products">Products</a>
+            </li>
+            <li>
+                <a href="#reviews">Reviews</a>
+            </li>
+            <li>
+                <a href="/">Contact</a>
+            </li>
+            <li>
+                <a href="/">Cookie Policy & Privacy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            © NanaCodes 2022, All rights reserved.
+        </p>
+    </div>
+
+    <!-- 
+        - js 
+    -->
+
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>
