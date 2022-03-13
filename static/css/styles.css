@@ -36,79 +36,6 @@ body {
 }
 
 /* -----------
-    cookies
------------*/
-/*
-#cookiePopup {
-  background-color: #a98467;
-  position: absolute;
-  font-size: 14px;
-  width: 100%;
-  max-width: 42.85em;
-  box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
-  font-family: "Poppins", sans-serif;
-  text-align: justify;
-  line-height: 1.8em;
-  padding: 2em 1.4em;
-  border-radius: 6px;
-  border: 2px solid #6c584c;
-  transition: all 0.5s ease-in;
-  z-index: 99;
-}
-#cookiePopup img {
-  display: block;
-  width: 3.75em;
-  transform: translateZ(0);
-  position: relative;
-  margin: auto;
-}
-#cookiePopup p {
-  text-align: center;
-  font-size: 1.2rem;
-  margin: 1.4em 0;
-  color: #f0ead2;
-}
-#cookiePopup button {
-  display: block;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #adc178;
-  color: white;
-  margin: auto;
-  cursor: pointer;
-}
-#cookiePopup a {
-  color: #785ab0;
-}
-.hide {
-  visibility: hidden;
-  bottom: 2em;
-  right: 0;
-}
-.show {
-  visibility: visible;
-  bottom: 15em;
-  right: 5em;
-}
-@media only screen and (max-width: 37.5em) {
-  #cookiePopup {
-    width: 100%;
-  }
-  .hide {
-    bottom: 2em;
-    right: 0;
-  }
-  .show {
-    right: 0;
-    bottom: 0;
-  }
-}
-*/
-
-/* -----------
     navbar
 -----------*/
 
@@ -822,6 +749,14 @@ nav .container .menu a:hover {
 
 .products .box-container .box .image .icons a:hover {
   color: #dad6d3;
+}
+
+.products .box-container .box .image .icons .heart:hover {
+  color: #aa5f6f;
+}
+
+.products .box-container .box .image .icons .heart:active {
+  color: #aa5f6f;
 }
 
 .products .box-container .box .image .icons .cart-btn {
