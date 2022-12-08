@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YesPlants | Cart</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- cookies 
+    <div id="cookiePopup">
+        <img src="/images/cookie.png" alt="cookie">
+        <p>
+            Our website uses cookies to provide your browsing experience and
+            relevant information. Before continuing to use our website, you agree &
+            accept of our <a href="#">Cookie Policy & Privacy.</a>
+        </p>
+        <button id="acceptCookie">Accept</button>
+    </div>
+-->
+    <!-- navbar -->
+
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">YesPlants</a>
+            <div class="menu">
+                <a href="/index#services">Why us?</a>
+                <a href="/index#about">About us</a>
+                <a href="/index#faq">FAQ's</a>
+                <a href="/index#products">Products</a>
+                <a href="/index#reviews">Reviews</a>
+                <a href="/cart"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #e8e9ed;">
+                        <path
+                            d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z">
+                        </path>
+                    </svg></a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-nav">
+        <a href="/index#services">Why us?</a>
+        <a href="/index#about">About us</a>
+        <a href="/index#faq">FAQ's</a>
+        <a href="/index#reviews">Reviews</a>
+        <a href="/cart"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #e8e9ed;">
+                <path
+                    d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z">
+                </path>
+            </svg></a>
+    </div>
+
+    <!-- 
+        - base code section 
+    -->
+
+    <div class="cart-container">
+        <h1 class="heading">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #19362a">
+                <path
+                    d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z">
+                </path>
+            </svg>
+            Shopping bag
+        </h1>
+
+        <div class="item-flex">
+
+            <!-- 
+               - checkout section 
+            -->
+
+            <section class="checkout">
+                <h2 class="section-heading">Payment Details</h2>
+                <div class="payment-form">
+                    <div class="payment-method">
+                        <button class="method selected">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Credit Card</span>
+                            <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
+                        </button>
+
+                        <button class="method">
+                            <i class="fab fa-cc-paypal"></i>
+                            <span>PayPal</span>
+                            <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <form action="#">
+
+                        <div class="cardholder-name">
+                            <label for="Name" class="label-deafult">Cardhodler Name</label>
+                            <input type="text" id="cardholder-name" name="cardholder-name" class="input-deafult">
+                        </div>
+
+                        <div class="card-number">
+                            <label for="card-number" class="label-deafult">Card Number</label>
+                            <input type="number" id="card-number" name="card-number" class="input-deafult">
+                        </div>
+
+                        <div class="input-flex">
+                            <div class="expire-date">
+                                <label for="expire-date" class="label-deafult">Expiration Date</label>
+                                <div class="input-flex">
+                                    <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31"
+                                        class="input-deafult">
+                                    /
+                                    <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12"
+                                        class="input-deafult">
+                                </div>
+                            </div>
+
+                            <div class="cvv">
+                                <label for="cvv" class="label-deafult">CVV</label>
+                                <input type="number" name="cvv" id="cvv" class="input-deafult">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <button class="btn btn-primary">
+                    <b>complete purchase</b>
+                </button>
+            </section>
+
+            <!-- 
+                - cart section 
+            -->
+
+            <section class="cart">
+
+                <div class="cart-item-box">
+                    <h2 class="section-heading">Order Summary</h2>
+                    <div class="product-card">
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="/assets/images/product3.jpg" alt="cactus 3" width="100px" class="product-img">
+                            </div>
+                            <div class="detail">
+                                <h4 class="product-name">Cactus</h4>
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button id="decrement">
+                                            <ion-icon name="remove-outline"></ion-icon>
+                                        </button>
+                                        <span id="quantity">1</span>
+                                        <button id="increment">
+                                            <ion-icon name="add-outline"></ion-icon>
+                                        </button>
+
+                                    </div>
+                                    <div class="price">
+                                        <span id="price">7.46</span> €
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="product-close-btn">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="/assets/images/product6.jpg" alt="plant 6" width="100px" class="product-img">
+                            </div>
+
+                            <div class="detail">
+                                <h4 class="product-name">Plant</h4>
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button id="decrement">
+                                            <ion-icon name="remove-outline"></ion-icon>
+                                        </button>
+                                        <span id="quantity">1</span>
+                                        <button id="increment">
+                                            <ion-icon name="add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                    <div class="price">
+                                        <span id="price">10.01</span> €
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="product-close-btn">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+
+                    <div class="discount-token">
+                        <label for="token" class="label-deafult">Gift Card / Promo-code</label>
+                        <div class="wrapper-flex">
+                            <input type="text" name="discount-token" id="discount-token" class="input-deafult">
+                            <button class="btn btn-outline">Apply</button>
+                        </div>
+                    </div>
+
+                    <div class="amount">
+                        <div class="subtotal">
+                            <span>Subtotal</span><span id="subtotal"><span>22.14</span></span>
+                        </div>
+                        <div class="tax">
+                            <span>Tax</span> <span id="tax"><span>0.10</span></span>
+                        </div>
+                        <div class="shipping">
+                            <span>Shipping</span> <span id="shipping"><span>0.00 </span></span>
+                        </div>
+                        <div class="total">
+                            <span>Total</span> <span id="total"><span>22.59 </span></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- 
+        - footer section 
+    -->
+
+    <div class="footer">
+        <div class="social">
+            <a href="/"><i class="fab fa-facebook"></i></a>
+            <a href="/"><i class="fab fa-youtube"></i></a>
+            <a href="/"><i class="fab fa-instagram"></i></a>
+            <a href="/"><i class="fab fa-twitter"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/index#home">Home</a>
+            </li>
+            <li>
+                <a href="/index#services">Why us?</a>
+            </li>
+            <li>
+                <a href="/index#about">About</a>
+            </li>
+            <li>
+                <a href="/index#faq">FAQ's</a>
+            </li>
+            <li>
+                <a href="/index#products">Products</a>
+            </li>
+            <li>
+                <a href="/index#reviews">Reviews</a>
+            </li>
+            <li>
+                <a href="/">Contact</a>
+            </li>
+            <li>
+                <a href="/">Cookie Policy & Privacy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            © <a href="http://www.anavargason.com">Ana Vargason</a> 2022, All rights reserved.
+        </p>
+    </div>
+
+    <!-- 
+        - js 
+    -->
+
+    <script src="/assets/js/app.js"></script>
+
+    <!--
+        - icons
+    -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
