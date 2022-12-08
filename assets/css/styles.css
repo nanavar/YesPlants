@@ -35,6 +35,66 @@ body {
   color: #718c7b;
 }
 
+/* -------------
+    cookies
+-------------*/
+
+#cookies {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #f3f0ed88;
+  z-index: 100;
+  display: none;
+  padding: 10px;
+}
+
+#cookies .container {
+  max-width: 1600px;
+  margin: auto;
+}
+
+#cookies .container .subcontainer {
+  width: 75%;
+  margin: auto;
+}
+
+#cookies .container .subcontainer .cookies {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#cookies .container .subcontainer .cookies a {
+  color: #718c7b;
+  transition: 0.4s ease;
+}
+#cookies .container .subcontainer .cookies a:hover {
+  color: #6b584c;
+}
+
+#cookies .container .subcontainer .cookies img {
+  width: 100px;
+}
+
+#cookies .container .subcontainer button {
+  float: right;
+}
+
+@media (max-width: 1600px) {
+  #cookies .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .cookies {
+    padding: 10px 0;
+  }
+}
+
 /* -----------
     navbar
 -----------*/
@@ -203,7 +263,7 @@ nav .container .menu a:hover {
 
 .main__container::before {
   content: "";
-  background-image: url(assets/images/bg2.jpg);
+  background-image: url(/assets/images/bg2.jpg);
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -360,7 +420,7 @@ nav .container .menu a:hover {
   height: 525px;
   width: 400px;
   border-radius: 4px;
-  background-image: url(assets/images/soil.jpg);
+  background-image: url(/assets/images/soil.jpg);
   background-size: cover;
   position: relative;
   color: #000000;
@@ -368,7 +428,7 @@ nav .container .menu a:hover {
 }
 
 .services__card:nth-child(2) {
-  background-image: url(assets/images/card1.jpg);
+  background-image: url(/assets/images/card1.jpg);
   background-size: cover;
   position: relative;
   color: #000;
@@ -616,7 +676,7 @@ nav .container .menu a:hover {
   display: block;
   width: 1.2rem;
   height: 1.2rem;
-  background-image: url(assets/images/down.png);
+  background-image: url(/assets/images/down.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -837,6 +897,7 @@ nav .container .menu a:hover {
     bottom: 0;
   }
 
+  .products .box-container .box .image .icons button,
   .products .box-container .box .image .icons a {
     line-height: 2rem;
     font-size: 1rem;
@@ -845,7 +906,7 @@ nav .container .menu a:hover {
     text-decoration: none;
   }
 
-  .products .box-container .box .image .icons a:hover {
+  .products .box-container .box .image .icons button:hover {
     color: #dad6d3;
   }
 
@@ -1032,6 +1093,8 @@ nav .container .menu a:hover {
 
 .payment-method .selected {
   border-color: #718c7b;
+  background-color: #718c7b;
+  color: #f3f0ed;
 }
 
 .payment-method .method ion-icon {
@@ -1040,11 +1103,7 @@ nav .container .menu a:hover {
 
 .payment-method .method .checkmark {
   margin-left: auto;
-  color: #dad6d3;
-}
-
-.payment-method .method .fill {
-  color: #718c7b;
+  color: #fff;
 }
 
 .label-deafult {
@@ -1246,6 +1305,10 @@ input::-webkit-outer-spin-button {
   border-radius: 50%;
   width: 1.35rem;
   height: 1.35rem;
+}
+
+.product-close-btn-delete {
+  display: none;
 }
 
 .product-close-btn ion-icon {
