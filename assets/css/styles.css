@@ -203,7 +203,7 @@ nav .container .menu a:hover {
 
 .main__container::before {
   content: "";
-  background-image: url(/assets/images/bg2.jpg);
+  background-image: url(assets/images/bg2.jpg);
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -360,7 +360,7 @@ nav .container .menu a:hover {
   height: 525px;
   width: 400px;
   border-radius: 4px;
-  background-image: url(/assets/images/soil.jpg);
+  background-image: url(assets/images/soil.jpg);
   background-size: cover;
   position: relative;
   color: #000000;
@@ -368,7 +368,7 @@ nav .container .menu a:hover {
 }
 
 .services__card:nth-child(2) {
-  background-image: url(/assets/images/card1.jpg);
+  background-image: url(assets/images/card1.jpg);
   background-size: cover;
   position: relative;
   color: #000;
@@ -616,7 +616,7 @@ nav .container .menu a:hover {
   display: block;
   width: 1.2rem;
   height: 1.2rem;
-  background-image: url(/assets/images/down.png);
+  background-image: url(assets/images/down.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
